@@ -93,7 +93,6 @@ class Wget(object):
         )
         
     
-
 wget_obj = Wget(args.max_urls)
 ioloop.IOLoop.instance().add_callback(partial(wget_obj.process_url, args.url))
 ioloop.IOLoop.instance().start()
